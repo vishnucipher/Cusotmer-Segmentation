@@ -5,7 +5,7 @@ This case requires to develop a customer segmentation to give recommendations li
 
  Based on the customers features Ml model will recommends, saving plans, loans ,wealth....
 
-(Deployement Link)[https://cusotmer-segmentation.onrender.com]
+[Deployement Link](https://cusotmer-segmentation.onrender.com)
  ### Features Description
 
 ```
