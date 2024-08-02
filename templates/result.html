@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Segmentation Result</title>
+    <link rel="stylesheet" href="/static/css/result.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Segmentation Result</h1>
+        <div class="result">
+            <p>The predicted customer segment is: <strong>{{ result }}</strong></p>
+        </div>
+        <a href="{{ url_for('home') }}" class="btn">Back to Form</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CUSTOMER SEGMENTATION FORM</h2>
+        <form action="{{url_for('submit')}}" method="POST">
+            <div class="form-grid">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="feature1">BALANCE:</label>
+                        <input type="text" id="feature1" name="feature1" required>
+                        <small><small>Currently Bank Balance</small></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature2">BALANCE_FREQUENCY:</label>
+                        <input type="text" id="feature2" name="feature2" required placeholder='EX: 0.8 = 80%'>
+                        <small>"BALANCE_FREQUENCY" How often different amounts of money(balances) appear in the dataset of bank accounts.</small>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="feature3">PURCHASES:</label>
+                        <input type="text" id="feature3" name="feature3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature4">ONEOFF_PURCHASES:</label>
+                        <input type="text" id="feature4" name="feature4" required>
+                        <small>"ONEOFF_PURCHASE" how much money or how many items customers bought in a single transaction</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature5">INSTALLMENTS_PURCHASES:</label>
+                        <input type="text" id="feature5" name="feature5" required>
+                        <small>"INSTALLMENTS_PURCHASES" shows how much money or how many items customers bought using installment payments (paying in parts over time)</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature6">CASH_ADVANCE:</label>
+                        <input type="text" id="feature6" name="feature6" required>
+                        <small>"CASH_ADVANCE" refers to the amount of cash that customers withdraw or borrow from their credit account.</small>
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="feature7">PURCHASES_FREQUENCY:</label>
+                        <input type="text" id="feature7" name="feature7" required placeholder="EX: 0.8 = 80%">
+                        <small>"PURCHASES_FREQUENCY" tells us how often(many times or frequently) customers buy stuff.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature8">ONEOFF_PURCHASES_FREQUENCY:</label>
+                        <input type="text" id="feature8" name="feature8" required placeholder='EX: 0.8 = 80%'>
+                        <small>"ONEOFF_PURCHASES_FREQUENCY" tells us how often customers make single, one-time purchases.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature9">PURCHASES_INSTALLMENTS_FQNCY:</label>
+                        <input type="text" id="feature9" name="feature9" required placeholder='EX: 0.8 = 80%'>
+                        <small>"PURCHASES_INSTALLMENTS_FREQUENCY" shows how often customers make purchases using installment payments</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature10">CASH_ADVANCE_FREQUENCY:</label>
+                        <input type="text" id="feature10" name="feature10" required placeholder='EX: 0.8 = 80%'>
+                        <small>"CASH_ADVANCE_FREQUENCY" shows how often customers take out cash advances from their credit account.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature11">CASH_ADVANCE_TRX:</label>
+                        <input type="text" id="feature11" name="feature11" required>
+                        <small>"CASH_ADVANCE_TRX" represents the number of transactions where customers took out cash advances from their credit account.</small>                   
+                    </div>
+                    <div class="form-group">
+                        <label for="feature12">PURCHASES_TRX:</label>
+                        <input type="text" id="feature12" name="feature12" required>
+                        <small>"PURCHASES_TRX" stands for the number of transactions where customers made purchases.</small>
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="feature13">CREDIT_LIMIT:</label>
+                        <input type="text" id="feature13" name="feature13" required>
+                        <small>"CREDIT_LIMIT" is the maximum amount of money a customer can borrow on their credit account.</small>                   
+                    </div>
+                    <div class="form-group">
+                        <label for="feature14">PAYMENTS:</label>
+                        <input type="text" id="feature14" name="feature14" required>
+                        <small>"PAYMENTS" is the money customers have paid to their credit card.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature15">MINIMUM_PAYMENTS:</label>
+                        <input type="text" id="feature15" name="feature15" required>
+                        <small>"MINIMUM_PAYMENTS" is the smallest amount of money customers need to pay on their credit card each month.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feature16">PRC_FULL_PAYMENT:</label>
+                        <input type="text" id="feature16" name="feature16" required placeholder='EX: 0.8 = 80%'>
+                        <small>"PRC_FULL_PAYMENT" shows the percentage of the credit card balance that customers pay off completely each month.</small>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="feature17">TENURE:</label>
+                        <input type="text" id="feature17" name="feature17" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
